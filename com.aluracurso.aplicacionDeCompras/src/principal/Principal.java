@@ -3,6 +3,7 @@ import modelos.Compras;
 import modelos.TarjetaCredito;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -68,12 +69,12 @@ public class Principal {
                     break;
             }
 
-
         }
        System.out.println("""
                Lista de compras 🛍️🛒:
                ------------------------------------
                """);
+       miListaDeCompras.sort(Comparator.comparing(Compras::getValorCompra));
        System.out.println(miListaDeCompras + "\n");
        System.out.println("saldo tarjeta: " + tarjetaCredito.getLimiteTarjeta()+ "$");
 //
