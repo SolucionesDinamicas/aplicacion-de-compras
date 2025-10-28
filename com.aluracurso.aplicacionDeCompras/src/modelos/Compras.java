@@ -20,4 +20,17 @@ public class Compras {
     public void setValorCompra(double valorCompra) {
         this.valorCompra = valorCompra;
     }
+
+    public String getDescripcionCompra() {
+        return descripcionCompra;
+    }
+
+    public double getValorCompra() {
+        return valorCompra;
+    }
+
+    @Override
+    public String toString() {
+        return "[Descripción artículo: " + getDescripcionCompra() + " Valor compra: " + getValorCompra() +"]\n";
+    }
 }

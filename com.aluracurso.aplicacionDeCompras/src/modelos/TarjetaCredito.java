@@ -14,7 +14,7 @@ public class TarjetaCredito {
 
     //Metodo para sumar al saldo de la tarjeta el valor comprado
     public void valorLimiteTarjeta(double valor){
-        this.limiteTarjeta+= valor;
+        this.limiteTarjeta-= valor;
     }
 
 
